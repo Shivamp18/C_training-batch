@@ -1,0 +1,29 @@
+#include<stdio.h>
+int power(int n,int p)
+    {int i,f=1;
+    for(i=1;i<=p;i++)
+    { f=n*f;
+    }
+    return f;
+    }
+int main() {
+    int n,length=0,sum=0,d,r;
+    scanf("%d",&n);
+    
+
+
+    while(n>0)
+    {    r=n%10;
+         n=n/10;
+         length++;
+         if(r>0)
+         {d=power(r,length);
+         sum=sum+d;}
+             
+    }
+    printf("%d",sum);
+    
+
+
+    return 0;
+}
