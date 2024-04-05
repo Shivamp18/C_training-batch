@@ -1,0 +1,24 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void main(){
+    int i,j,spaces,coef,row;
+    scanf("%d",&row);
+    for(i=1;i<=row;i++)
+    {
+    {for(spaces=1;spaces<=row-i;spaces++)
+    {printf(" ");}}
+    coef=1;
+    for(j=1;j<=i;j++)
+    {
+        printf("%2d",coef);
+    coef=coef*(i-j)/j;
+    }
+    printf("\n");}
+    
+    
+    
+   
+
+
+}
